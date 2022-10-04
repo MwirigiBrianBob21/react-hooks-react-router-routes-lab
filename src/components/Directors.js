@@ -13,7 +13,10 @@ function Directors() {
       </ul>
     </div>
   ));
-  return <div>{items}</div>;
+  return <div>
+    <h1>Directors Page</h1>
+      {items}
+      </div>;
 }
 
 export default Directors;

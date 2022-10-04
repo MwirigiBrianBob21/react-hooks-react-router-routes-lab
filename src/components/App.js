@@ -5,13 +5,18 @@ import Home from "./Home";
 import Actors from "./Actors";
 import Directors from "./Directors";
 import Movies from "./Movies";
+import { BrowserRouter } from "react-router-dom/cjs/react-router-dom.min";
 
 function App() {
   return(
-  <>
+  <div>
+    <BrowserRouter>
     <NavBar />
+    </BrowserRouter>
+   
+    
     <Switch>
-      
+    
       <Route path="/movies">
         <Movies />
       </Route>
@@ -24,8 +29,9 @@ function App() {
       <Route path="/">
         <Home />
       </Route>
+      
     </Switch>
-  </>
+  </div>
   );
 }
 
